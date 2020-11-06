@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Quotes } from '../quotes';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-quotes',
+  templateUrl: './quotes.component.html',
+  styleUrls: ['./quotes.component.css']
 })
-export class AppComponent {
+export class QuotesComponent implements OnInit {
   quotes: Quotes[]=[
     {quote:'People will forget what you said. People will forget what you did. But people will never forget how you made them feel.', author: 'MAYA ANGELOU', person:'MAYA ANGELOU'},
     {quote:'Success is liking yourself, liking what you do, and liking how you do it.', author: 'MAYA ANGELOU', person:'MAYA ANGELOU'},
@@ -20,5 +21,11 @@ export class AppComponent {
     {quote:'Women are like teabags. We don’t know our true strength until we are in hot water!', author: 'ELEANOR ROOSEVELT', person:'ELEANOR ROOSEVELT'},
     
   ];
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
