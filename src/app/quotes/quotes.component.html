@@ -1,1 +1,9 @@
-<p>quotes works!</p>
+<div class="row">
+    <div class="col-md-5">
+
+        <p *ngFor=" let quote of quotes">
+           {{quote.quote}} <br>
+           {{quote.author}}<br>
+           {{quote.person}}</p>
+    </div>
+</div>
