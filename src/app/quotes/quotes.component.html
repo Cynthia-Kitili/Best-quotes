@@ -3,7 +3,7 @@
       <ul>
         <li *ngFor=" let quote of quotes">
            {{quote.quote}} 
-           <app-quotes-detail [quote]='quotes'></app-quotes-detail>
+           <app-quotes-detail *ngIf='quote.hasAuthor' *ngIf='quote.hasPerson' [quote]='quotes'></app-quotes-detail>
         </li> 
       </ul>    
     </div>
