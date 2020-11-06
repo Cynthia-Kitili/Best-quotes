@@ -1,7 +1,7 @@
 export class Quotes {
-    /*hasAuthor: boolean;
+    hasAuthor: boolean;
     hasPerson: boolean;
-    constructor(public quote: string, public Author: string, public person: string){
+    constructor(public quote: string, public author: string, public person: string){
       this.hasAuthor=false;
       this.hasPerson=false;
     }
