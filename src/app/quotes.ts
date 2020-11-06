@@ -1,5 +1,8 @@
 export class Quotes {
-    quote: string;
-    author: string;
-    person: string;
-}
+    /*hasAuthor: boolean;
+    hasPerson: boolean;
+    constructor(public quote: string, public Author: string, public person: string){
+      this.hasAuthor=false;
+      this.hasPerson=false;
+    }
+  }

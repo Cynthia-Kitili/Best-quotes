@@ -1,9 +1,11 @@
 <div class="row">
     <div class="col-md-5">
-
-        <p *ngFor=" let quote of quotes">
-           {{quote.quote}} <br>
-           {{quote.author}}<br>
-           {{quote.person}}</p>
+      <ul>
+        <li *ngFor=" let quote of quotes">
+           {{quote.quote}} 
+           <app-quotes-detail [quote]='quotes'></app-quotes-detail>
+        </li> 
+      </ul>    
     </div>
+   
 </div>
