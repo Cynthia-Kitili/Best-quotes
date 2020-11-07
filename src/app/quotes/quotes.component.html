@@ -1,7 +1,9 @@
-<div class="card">
-    <div class="col">
+<app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+<hr>
+<div class="rows">
+    <div class=" card col-md-8">
       <ul>
-        <li *ngFor=" let quote of quotes ; let i= index " >
+        <li appHighlight *ngFor=" let quote of quotes ; let i= index " >
            {{quote.quote}}<br>
            published on {{quote.completeDate|date}} <br>
            <app-quotes-detail [quote]='quote'(isComplete) = 'deleteQuote($event,i)'></app-quotes-detail><br>
@@ -12,7 +14,7 @@
       </ul>    
     </div>
     <div class="col-md-6">
-      <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+     
  </div>
    
 </div>
