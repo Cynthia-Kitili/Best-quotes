@@ -2,10 +2,12 @@
     <div class="col-md-5">
       <ul>
         <li *ngFor=" let quote of quotes ; let i= index " >
-           {{quote.quote}} published on {{quote.completeDate|date}} <br>
+           {{quote.quote}}<br>
+           <app-quotes-detail [quote]='quotes'></app-quotes-detail>
+            published on {{quote.completeDate|date}} <br>
            <button (click)='upVote(i)'><img style="width: 5%; height: 5%;"src="assets/likes.png" alt="likes image">Likes</button>
            <button (click)='downVote(i)'><img style="width: 5%; height: 5%;"src="assets/dislike3.png" alt="dislikes image">Dislikes</button>
-           <app-quotes-detail [quote]='quotes'></app-quotes-detail>
+          
         </li> 
       </ul>    
     </div>

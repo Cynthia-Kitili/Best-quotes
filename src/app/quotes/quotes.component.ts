@@ -9,7 +9,7 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes: Quotes[]=[
-    new Quotes('People will forget what you said. People will forget what you did. But people will never forget how you made them feel.',  'MAYA ANGELOU', 'MAYA ANGELOU',new Date(2017,9,29)),
+    new Quotes('People will forget what you said. People will forget what you did. But people will never forget how you made them feel.',  'MAYA ANGELOU' , 'MAYA ANGELOU',new Date(2017,9,29)),
     new Quotes('Success is liking yourself, liking what you do, and liking how you do it.',  'MAYA ANGELOU', 'MAYA ANGELOU',new Date(2006,6,2)),
     new Quotes('My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.',  'MAYA ANGELOU', 'MAYA ANGELOU', new Date(2003,4,17)),
     new Quotes('Beware of rashness, but with energy and sleepless vigilance go forward and give us victories.',  'ABRAHAM LINCOLN', 'ABRAHAM LINCOLN',new Date(2012,6,13)),
