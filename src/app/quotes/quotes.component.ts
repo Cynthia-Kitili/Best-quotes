@@ -17,9 +17,9 @@ export class QuotesComponent implements OnInit {
     new Quotes('The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.',  'MARTIN LUTHER KING(JR.)', 'MARTIN LUTHER KING(JR.)',new Date(2005,12,5)),
     new Quotes('I believe that everything happens for a reason. People change so that you can learn to let go, things go wrong so that you appreciate them when they are right, you believe lies so you eventually learn to trust no one but yourself, and sometimes good things fall apart so better things can fall together.',  'MARILYN MONROE', 'MARILYN MONROE',new Date(2020,7,9)),
     new Quotes('Your beliefs become your thoughts, Your thoughts become your words, Your words become your actions, Your actions become your habits, Your habits become your values, Your values become your destiny.',  'MOHANDAS GANDHI', 'MOHANDAS GANDHI',new Date(2014,8,12)),
-    new Quotes('Try not to become a man of success. Rather become a man of value.',  'ALBERT EINSTEIN', 'ALBERT EINSTEIN'),
-    new Quotes('Two roads diverged in a wood, and I — I took the one less traveled by, And that has made all the difference.',  'ROBERT FROST', 'ROBERT FROST'),
-    new Quotes('Women are like teabags. We don’t know our true strength until we are in hot water!',  'ELEANOR ROOSEVELT', 'ELEANOR ROOSEVELT'),
+    new Quotes('Try not to become a man of success. Rather become a man of value.',  'ALBERT EINSTEIN', 'ALBERT EINSTEIN',new Date(2015,3,23)),
+    new Quotes('Two roads diverged in a wood, and I — I took the one less traveled by, And that has made all the difference.',  'ROBERT FROST', 'ROBERT FROST',new Date(2009,6,13)),
+    new Quotes('Women are like teabags. We don’t know our true strength until we are in hot water!',  'ELEANOR ROOSEVELT', 'ELEANOR ROOSEVELT',new Date(2016,12,30)),
     
   ];
 
