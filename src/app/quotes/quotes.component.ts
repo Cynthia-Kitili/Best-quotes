@@ -8,6 +8,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+  [x: string]: any;
   quotes: Quotes[]=[
     new Quotes('People will forget what you said. People will forget what you did. But people will never forget how you made them feel.',  'MAYA ANGELOU' , 'MAYA ANGELOU',new Date(2017,9,29)),
     new Quotes('Success is liking yourself, liking what you do, and liking how you do it.',  'MAYA ANGELOU', 'MAYA ANGELOU',new Date(2006,6,2)),
@@ -22,6 +23,15 @@ export class QuotesComponent implements OnInit {
     new Quotes('Women are like teabags. We don’t know our true strength until we are in hot water!',  'ELEANOR ROOSEVELT', 'ELEANOR ROOSEVELT',new Date(2016,12,30)),
     
   ];
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }    
 
 
   constructor() { }
