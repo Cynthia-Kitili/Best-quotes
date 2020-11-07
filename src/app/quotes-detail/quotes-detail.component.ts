@@ -14,10 +14,20 @@ export class QuotesDetailComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+  upVotes = 0;
+  downVotes = 0;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  upVote(){
+    this.upVotes = this.upVotes + 1
   }
+
+  downVote(){
+    this.downVotes = this.downVotes + 1;
+  }
+
+constructor() { }
+
+ngOnInit() {
+}
 
 }
