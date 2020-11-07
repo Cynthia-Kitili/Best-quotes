@@ -5,7 +5,7 @@
         <div class="form-group">
   
             <label for="quote">Quote</label>
-            <input type="text" rows="4"class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required>
+            <textarea type="text" rows="4" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required></textarea>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
               <p>Quote is required</p>
             </div>
@@ -28,13 +28,13 @@
         </div>
         <div class="form-group">
   
-            <label for="complete">Completion</label>
+            <label for="complete">Date</label><br>
             <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
               <p>Date is required</p>
             </div>
         </div>
-        <button type="submit" class="btn btn-success">Add Goal</button>
+        <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
   </div>
   
