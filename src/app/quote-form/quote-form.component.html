@@ -6,6 +6,7 @@
   
             <label for="quote">Quote</label>
             <textarea type="text" rows="4" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required></textarea>
+            
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
               <p>Quote is required</p>
             </div>
@@ -14,6 +15,7 @@
   
             <label for="author">Author</label>
             <textarea class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required></textarea>
+            
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
               <p>Author is required</p>
             </div>
@@ -22,6 +24,7 @@
   
             <label for="person">Publisher</label>
             <textarea class="form-control" id="person" [(ngModel)]="newQuote.person" name="person" #person="ngModel" required></textarea>
+            
             <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
               <p>Publisher is required</p>
             </div>
@@ -34,6 +37,9 @@
               <p>Date is required</p>
             </div>
         </div>
+        Quote:  {{newQuote.quote}}<br>
+        Author:  {{newQuote.author}}<br>
+        Publisher:  {{newQuote.person}}<br>
         <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
   </div>

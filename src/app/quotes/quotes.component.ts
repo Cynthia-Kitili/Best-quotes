@@ -1,5 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -42,6 +42,20 @@ export class QuotesComponent implements OnInit {
   toggleDetails(index){
     this.quotes[index].hasDetails = !this.quotes[index].hasDetails;
    
+  }
+  upVotes = 0;
+  downVotes = 0;
+
+  upVote(){
+    this.upVotes = this.upVotes + 1
+  }
+
+  downVote(){
+    this.downVotes = this.downVotes + 1;
+  }
+  @Output () isComplete= new EventEmitter<boolean>();
+  quoteDelete(complete:boolean){
+    this.isComplete.emit(complete);
   }
   constructor() { }
 

@@ -1,14 +1,18 @@
 <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
 <hr>
-<div class="rows">
-    <div class=" card col-md-8">
+<div class="card">
+    <div class=" card-title">
+      <div class="card-body">
       <ul>
         <li appHighlight *ngFor=" let quote of quotes ; let i= index " >
            {{quote.quote}}<br>
-           
+          
            <button (click)='toggleDetails(i)'>Show Details</button>
+          
            <app-quotes-detail *ngIf='quote.hasDetails'[quote]='quote'(isComplete) = 'deleteQuote($event,i)'></app-quotes-detail><br>
-            
+           <button (click)='upVote()'><img style="width: 5%; height: 5%;"src="assets/likes.png" alt="likes image">{{upVotes}}Likes</button>
+           <button (click)='downVote()'><img style="width: 5%; height: 5%;"src="assets/dislike3.png" alt="dislikes image">{{downVotes}}Dislikes</button> <br>
+           <button (click)= 'quoteDelete(true)'>Delete Quote</button>
 
 
         </li> 
