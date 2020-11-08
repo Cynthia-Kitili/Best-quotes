@@ -10,14 +10,14 @@
 }
 #quote,#author,#person,#complete{ 
     background: transparent;
-    color: white;
+    color: whitesmoke;
     font-size: 20px;
 }   
 .form-control::-webkit-input-placeholder { 
-    color: white; 
+    color: whitesmoke; 
   
   } 
 button{
-    color: white;
+    color: whitesmoke;
 
 }  

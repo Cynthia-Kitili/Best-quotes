@@ -29,10 +29,10 @@
               <p>Publisher is required</p>
             </div>
         </div>
-        <div style="color: black;" class="form-group">
+        <div style="color: white;" class="form-group">
   
             <label style="color: white;" for="complete">Date</label><br>
-            <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
+            <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" style="color: black;" name="completeDate" #completeDate="ngModel" required>
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
               <p>Date is required</p>
             </div>
