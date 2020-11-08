@@ -1,6 +1,7 @@
 
-<p>{{quote.author}}</p>
-<p>{{quote.person}}</p>
+<p>Author: {{quote.author}}</p>
+<p>Publisher: {{quote.person}}</p>
+ published on {{quote.completeDate|date}} <br>
 <p>Time passed since quote was published: {{quote.completeDate|dateCount}} days</p>
 
 <button (click)='upVote()'><img style="width: 5%; height: 5%;"src="assets/likes.png" alt="likes image">{{upVotes}}Likes</button>

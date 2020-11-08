@@ -5,8 +5,9 @@
       <ul>
         <li appHighlight *ngFor=" let quote of quotes ; let i= index " >
            {{quote.quote}}<br>
-           published on {{quote.completeDate|date}} <br>
-           <app-quotes-detail [quote]='quote'(isComplete) = 'deleteQuote($event,i)'></app-quotes-detail><br>
+           
+           <button (click)='toggleDetails(i)'>Show Details</button>
+           <app-quotes-detail *ngIf='quote.hasDetails'[quote]='quote'(isComplete) = 'deleteQuote($event,i)'></app-quotes-detail><br>
             
 
 

@@ -39,7 +39,10 @@ export class QuotesComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
- 
+  toggleDetails(index){
+    this.quotes[index].hasDetails = !this.quotes[index].hasDetails;
+   
+  }
   constructor() { }
 
   ngOnInit(): void {
