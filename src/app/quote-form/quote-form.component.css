@@ -11,4 +11,8 @@
     background: transparent;
     color: white;
     font-size: 20px;
-}    
+}   
+.form-control::-webkit-input-placeholder { 
+    color: white; 
+  
+  } 
