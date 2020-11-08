@@ -1,0 +1,14 @@
+.container-fluid{
+    background-image: url(https://wallpaperaccess.com/full/228914.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    color: whitesmoke;
+
+}
+#quote,#author,#person,#complete{ 
+    background: transparent;
+    color: white;
+    font-size: 20px;
+}    
