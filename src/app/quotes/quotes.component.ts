@@ -35,7 +35,7 @@ export class QuotesComponent implements OnInit {
       }
     }
   }    
-
+  
 
   
   addNewQuote(quote){
@@ -49,7 +49,7 @@ export class QuotesComponent implements OnInit {
    
   }
   
-  
+ 
   constructor() { }
 
   ngOnInit(): void {

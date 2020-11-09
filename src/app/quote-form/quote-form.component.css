@@ -6,7 +6,7 @@
     background-size: 100% 100%;
     color: whitesmoke;
     font-family: 'Lobster Two', cursive;
-
+     
 }
 #quote,#author,#person,#complete{ 
     background: transparent;
@@ -21,3 +21,7 @@ button{
     color: whitesmoke;
 
 }  
+h1{
+    text-align: center;
+    font-style: oblique;
+}

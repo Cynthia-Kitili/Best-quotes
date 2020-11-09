@@ -12,6 +12,7 @@ import { HighlightDirective } from './highlight.directive';
 import { VoteComponent } from './vote/vote.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { VoteComponent } from './vote/vote.component';
     QuoteFormComponent,
     HighlightDirective,
     VoteComponent
+  
   ],
   imports: [
     BrowserModule,

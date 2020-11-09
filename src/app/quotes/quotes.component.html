@@ -4,20 +4,21 @@
     <div class="row ">
       <div class="">
       <ul>
-        <li  *ngFor=" let quote of quotes ; let i= index " >
+        <li  appHighlight *ngFor=" let quote of quotes ; let i= index " >
            <img style="width: 2.5%; height: 2.5%;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSQukLCO6U3gggdHScojG3o9xLIAAJbRIie2w&usqp=CAU" >{{quote.quote}}<br>
           
            <button class="btn btn-dark" (click)='toggleDetails(i)'>Show Details</button>
           
            <app-quotes-detail *ngIf='quote.hasDetails'[quote]='quote'(isComplete) = 'deleteQuote($event,i)'></app-quotes-detail><br>
-          <app-vote></app-vote><br><hr>
+          <app-vote></app-vote>
+           <br><hr>
           
 
 
         </li> 
       </ul>    
     </div>
-    <div class="col-md-6">
+    
      
  </div>
    
