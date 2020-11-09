@@ -5,11 +5,12 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 export class HighlightDirective {
 constructor(private elem:ElementRef){}
 
-@HostListener("click") onClicks(){
+@HostListener("click") onClick(){
   this.textDeco("highlight")
 }
-
-
+@HostListener("dblclick") onDoubleClicks(){
+  this.textDeco("None")
+}
 private textDeco(action:string){
   this.elem.nativeElement.style.backgroundColor="brown";
 

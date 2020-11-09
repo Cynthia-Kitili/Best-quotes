@@ -1,9 +1,6 @@
 export class Quotes {
-  
    hasDetails: boolean;
-  
-   
-    constructor(
+   constructor(
       public quote: string, 
       public author: string, 
       public person: string,
