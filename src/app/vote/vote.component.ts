@@ -20,6 +20,7 @@ export class VoteComponent implements OnInit {
   downVote(){
     this.downVotes = this.downVotes + 1;
   }
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -1,5 +1,5 @@
 
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Quotes } from '../quotes';
 
 @Component({
@@ -8,7 +8,7 @@ import { Quotes } from '../quotes';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
-  [x: string]: any;
+  @Input () quote: Quotes;
   quotes: Quotes[]=[
     new Quotes('People will forget what you said. People will forget what you did. But people will never forget how you made them feel.',  'MAYA ANGELOU' , 'MAYA ANGELOU',new Date(2017,9,29)),
     new Quotes('Success is liking yourself, liking what you do, and liking how you do it.',  'MAYA ANGELOU', 'MAYA ANGELOU',new Date(2006,6,2)),
@@ -23,6 +23,9 @@ export class QuotesComponent implements OnInit {
     new Quotes('Women are like teabags. We don’t know our true strength until we are in hot water!',  'ELEANOR ROOSEVELT', 'ELEANOR ROOSEVELT',new Date(2016,12,30)),
     
   ];
+
+  @Output () isComplete= new EventEmitter<boolean>();
+ 
   deleteQuote(isComplete, index){
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].quote}?`)
@@ -32,6 +35,8 @@ export class QuotesComponent implements OnInit {
       }
     }
   }    
+
+
   
   addNewQuote(quote){
     let quoteLength = this.quotes.length;
@@ -44,10 +49,7 @@ export class QuotesComponent implements OnInit {
    
   }
   
-  @Output () isComplete= new EventEmitter<boolean>();
-  quoteDelete(complete:boolean){
-    this.isComplete.emit(complete);
-  }
+  
   constructor() { }
 
   ngOnInit(): void {

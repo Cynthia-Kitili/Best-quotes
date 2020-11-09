@@ -1,5 +1,7 @@
 export class Quotes {
+  
    hasDetails: boolean;
+  
    
     constructor(
       public quote: string, 

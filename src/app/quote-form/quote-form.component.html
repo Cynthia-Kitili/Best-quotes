@@ -4,7 +4,7 @@
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
   
-            <label for="quote">Quote</label>
+            <label for="quote">Quote:</label>
             <textarea type="text" rows="4" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" placeholder="Type in your quote..." #quote='ngModel' required></textarea>
             
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
@@ -13,7 +13,7 @@
         </div>
         <div class="form-group">
   
-            <label for="author">Author</label>
+            <label for="author">Author:</label>
             <textarea class="form-control" id="author" [(ngModel)]="newQuote.author" placeholder="Author's name..." name="author" #author="ngModel" required></textarea>
             
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
@@ -22,7 +22,7 @@
         </div>
         <div class="form-group">
   
-            <label for="person">Publisher</label>
+            <label for="person">Publisher:</label>
             <textarea class="form-control" id="person" [(ngModel)]="newQuote.person" name="person" placeholder="Publisher's name..." #person="ngModel" required></textarea>
             
             <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
@@ -31,7 +31,7 @@
         </div>
         <div style="color: white;" class="form-group">
   
-            <label style="color: white;" for="complete">Date</label><br>
+            <label style="color: white;font-size: 200%;" for="complete">Date:</label><br>
             <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" style="color: black;" name="completeDate" #completeDate="ngModel" required>
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
               <p>Date is required</p>
